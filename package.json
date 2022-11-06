@@ -1,0 +1,29 @@
+{
+  "name": "projet-serveur-web",
+  "version": "1.0.0",
+  "description": "Faire un site web d'inscription a des cours pour les employer du gouvernement. Doit comprendre 3 page, celle d'inscription, pour le compte de l'utilisateur et celle de l'admin",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Chrétien André Nzanga, Alexia Gratto et Simon-Gabriel Cloutier",
+  "license": "ISC",
+  "dependencies": {
+    "boxicons": "^2.1.4",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "helmet": "^6.0.0",
+    "JSON": "^1.0.0",
+    "promise-mysql": "^5.2.0",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

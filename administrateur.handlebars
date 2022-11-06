@@ -1,0 +1,45 @@
+{{>header}}
+<!--Afficher les cours-->
+<section class="cours-content">
+
+  {{#each cours}}
+  <form id="form_cours" data-id="{{this.id_cours}}">
+    <div class="cours-box">
+      <div class="cours-img-compte"></div>
+      <label class="cours-titre">{{this.nom}}</label>
+      <label class="cours-descript">{{this.description}}</label>
+      <label class="cours-descript">Capacite total: {{this.capacite}}</label>
+      <label class="cours-descript">Nombre de cours: {{this.nb_cours}}</label>
+      <label class="cours-descript">Date de debut (DD/MM/YYYY): {{afficheArgent this.date_debut}}</label>
+      <div class="btn">
+        <div class="btn2">
+          <button type="submit" class="btn_delete">Supprimer</button>
+        </div>
+      </div>
+      
+    </div>
+  </form> 
+  {{/each}}
+</section>
+<!--FORMULAIRE INSCRIPTION DES COURS-->
+<section class="sect">
+    <form action="" class="form" id="form_inscription">
+        <div class="creation_cours">
+            <p>Nom du cours:</p>
+            <input type="text" id="nom_cours" placeholder="">
+            <p>Description du cours</p>
+            <textarea id="description_cours" cols="25" rows="10">
+            </textarea>
+            <p>Capacite maximal de participant</p>
+            <input type="number" id="capacite_cours">
+            <p>Date de debut du cours</p>
+            <input type="date" id="date_debut">
+            <p>Nombre de cours</p>
+            <input type="number" id="nb_cours">
+            <div class="btn_top">
+                <button type="submit" class="btn_ajouter">Ajouter</button> 
+            </div>
+                
+        </div> 
+    </form>
+</section>

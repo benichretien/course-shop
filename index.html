@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="/css/style2.css" />
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--navigation avec les links et logo-->
+        <nav>
+            <h1>GOV-E-COURSES</h1>
+            <ul class="link_to_pages">
+                <li>
+                    <a
+                    href="/views/layout/main.handlebars" rel="noopener noreferrer">Inscription
+                    </a>
+                </li>
+                <li>
+                    <a href="/views/compte.handlebars" rel="noopener noreferrer">
+                        Compte
+                    </a>
+                </li>
+                <li>
+                    <a href="/views/administrateur.handlebars"rel="noopener noreferrer">
+                        Administrateur
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- fin navigation-->
+      </header>
+      <main>
+        <img class="banner" src="./img/banner.jpg" alt="travaille d'equipe">
+
+        <section>
+            <div>
+                <!--Titre du cours-->
+                <p>
+                    Cours de francais
+                </p>
+                <!--Description du cours--> 
+                <p>
+                    apprendre la langue francaise
+                </p>
+                <!--Capacite--> 
+                <p>
+                         /20 place de disponible
+                </p>
+                <!--Date de debut--> 
+                <p>
+                    24/10/2022
+                </p>
+                <!--Nb de cours--> 
+                <p>
+                    5 cours de 2h chacun
+                </p>
+                <button type="submit">S'inscrire</button>
+            </div>
+
+        </section>
+        <section>
+            <div class="creation_cours">
+                <p>Nom du cours:</p>
+                <input type="text" id="nom_cours" placeholder="">
+                <p>Description du cours</p>
+                <textarea id="description_cours" cols="25" rows="10">
+                </textarea>
+                <p>Capacite maximal de participant</p>
+                <input type="number" id="capacite_cours">
+                <p>Date de debut du cours</p>
+                <input type="date" id="date_debut">
+                <p>nombre de cours</p>
+                <input type="number" id="nb_cours">
+                <button type="submit">Ajouter</button>
+                
+            </div>
+        </section>
+      </main>
+      <footer>
+        &copy;
+      </footer>
+</body>
+</html>

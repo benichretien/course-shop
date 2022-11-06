@@ -1,0 +1,230 @@
+/**
+*! global css
+**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  font-size: 10px;
+  background-color: beige;
+  font-weight: 700;
+}
+/*header*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/*---------nav et links*/
+.zone {
+  width: 100%;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2rem;
+}
+ul {
+  list-style: none;
+}
+ul > li {
+  display: block;
+  padding: 25px;
+  cursor: pointer;
+}
+li > a {
+  text-decoration: none;
+  color: #fff;
+}
+li > a:hover {
+  color: coral;
+}
+.logo {
+  margin: 90px;
+  font-size: 2rem;
+  color: goldenrod;
+}
+.logo:hover {
+  cursor: pointer;
+}
+/**
+*? cart style only
+**/
+.cart {
+  position: relative;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+/**
+/*Fin nav*/
+/*Banner*/
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/img-2.jpg);
+  background-size: cover;
+  margin-bottom: 80px;
+}
+.photo {
+  background-image: url(../img/img-8.jpg);
+  width: 220px;
+  height: 300px;
+}
+/*Fin Banner*/
+/**
+*! SHOP ITEMS STYLES ARE HERE.
+**/
+.cours-content {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 223px);
+  gap: 100px;
+  justify-content: center;
+}
+.cours-img {
+  background-image: url(../img/img-8.jpg);
+  height: 50vh;
+  width: 220px;
+}
+.cours-box {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  border: 3px solid rgb(33, 32, 32);
+}
+.cours-box:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+  -webkit-transform: scale(1.05);
+}
+.bt-mod {
+  margin-top: 17px;
+}
+h1,
+h2,
+h3,
+span,
+p {
+  text-align: center;
+}
+.inner-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.btn_inscrire {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  border: none;
+  background-color: goldenrod;
+  border-radius: 10px;
+}
+.btn_inscrire:hover {
+  background-color: coral;
+}
+/**
+*! media queries
+*? quand tu descends a 1000px voici le resultat
+**/
+@media (max-width: 1000px) {
+  .cours-content {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+/**
+*! media queries
+*? quand tu descends a 500px voici le resultat
+**/
+@media (max-width: 550px) {
+  .cours-content {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+.bi-dash-lg {
+  color: red;
+}
+.bi-plus-lg {
+  color: green;
+}
+/**
+*! cours handlebars style here
+*
+**/
+.mg_top {
+  margin-top: 170px;
+}
+.cours-box-compte {
+  display: flex;
+  width: 220px;
+  flex-direction: column;
+  gap: 4px;
+  border: 2px solid black;
+}
+.cours-img-compte {
+  background-image: url(../img/img-8.jpg);
+  height: 20vh;
+  width: 218px;
+}
+.cours-top {
+  /* border: 1px solid blue; */
+  display: grid;
+  grid-template-columns: repeat(3, 223px);
+  gap: 70px;
+  justify-content: center;
+}
+.cours-titre {
+  text-align: center;
+}
+.capacite {
+  text-align: center;
+}
+.description {
+  text-align: center;
+}
+.btn_delete {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  border: none;
+  background-color: goldenrod;
+  border-radius: 10px;
+}
+.btn_delete:hover {
+  background-color: coral;
+}
